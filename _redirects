@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects and headers
+
+# Handle missing trailing slashes
+/products/    /products.html    200
+/solutions/   /solutions.html   200  
+/news/        /news.html        200
+/about/       /about.html       200
+/contact/     /contact.html     200
+/support/     /support.html     200
+
+# Handle 404s
+/*            /404.html         404
