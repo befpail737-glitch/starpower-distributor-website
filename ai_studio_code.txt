@@ -1,9 +1,0 @@
-<svg width="200" height="40" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .logo-text { font: bold 30px 'Segoe UI', Arial, sans-serif; fill: #0033A0; }
-    .logo-tag { font: 12px 'Segoe UI', Arial, sans-serif; fill: #D90429; }
-  </style>
-  <text x="0" y="30" class="logo-text">YourCo</text>
-  <text x="105" y="20" class="logo-tag">Starpower</text>
-  <text x="105" y="32" class="logo-tag">Distributor</text>
-</svg>
