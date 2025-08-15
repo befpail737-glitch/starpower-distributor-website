@@ -1,4 +1,6 @@
-# Simplified redirects for Cloudflare Pages
-/products    /products.html    200
-/solutions   /solutions.html   200  
-/news        /news.html        200
+/products /products.html 200
+/solutions /solutions.html 200
+/news /news.html 200
+/products/ /products.html 200
+/solutions/ /solutions.html 200
+/news/ /news.html 200
