@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Industry Insights | Starpower Updates</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #0033A0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .page-header {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #212529;
+            margin-bottom: 1rem;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .category-card {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .category-card h3 {
+            color: #0033A0;
+            margin-bottom: 1rem;
+        }
+        .category-card p {
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            background: #0033A0;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background: #002080;
+        }
+        footer {
+            background: #212529;
+            color: #ccc;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        footer h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .breadcrumbs {
+            padding: 1rem 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumbs a {
+            color: #0033A0;
+            text-decoration: none;
+        }
+        .article-list {
+            max-width: 800px;
+        }
+        .article-preview {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="news.html"><strong>News</strong></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> / <span>News</span>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>News & Industry Insights</h1>
+            <p>Stay updated with the latest developments in power electronics</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>Latest News</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>📰 Industry Trends</h3>
+                    <p>Latest developments in power semiconductor technology and markets, including EV adoption and renewable energy growth.</p>
+                    <a href="news/industry-insights/" class="btn">Read Insights</a>
+                </div>
+                <div class="category-card">
+                    <h3>🏢 Company Updates</h3>
+                    <p>News and announcements from YourCompanyName and Starpower, including product launches and partnerships.</p>
+                    <a href="news/company/" class="btn">Company News</a>
+                </div>
+                <div class="category-card">
+                    <h3>🔬 Technical Insights</h3>
+                    <p>Expert analysis and technical articles from our engineering team covering design trends and applications.</p>
+                    <a href="#" class="btn">Technical Articles</a>
+                </div>
+            </div>
+
+            <h2>Recent Articles</h2>
+            <div class="article-list">
+                <article class="article-preview">
+                    <h3><a href="news/company/announcing-new-headquarters.html">YourCompanyName Expands with New Headquarters and Warehouse</a></h3>
+                    <p class="article-meta">August 19, 2025 | Company News</p>
+                    <p>To better serve our customers, YourCompanyName is excited to announce our move to a new, larger facility that will enhance our distribution capabilities and technical support services...</p>
+                    <a href="news/company/announcing-new-headquarters.html" class="btn">Read More</a>
+                </article>
+                
+                <article class="article-preview">
+                    <h3><a href="news/company/partnership-with-university.html">YourCompanyName Announces Technical Partnership</a></h3>
+                    <p class="article-meta">August 25, 2025 | Company News</p>
+                    <p>YourCompanyName partners with the Power Electronics Lab to foster innovation in next-generation power semiconductor applications and research...</p>
+                    <a href="news/company/partnership-with-university.html" class="btn">Read More</a>
+                </article>
+                
+                <article class="article-preview">
+                    <h3><a href="news/industry-insights/2026-ev-market-trends.html">3 Key Power Semiconductor Trends for the EV Market in 2026</a></h3>
+                    <p class="article-meta">August 22, 2025 | Industry Insights</p>
+                    <p>An analysis of the key trends shaping the EV market, including the shift to 800V systems, SiC adoption, and integrated power modules...</p>
+                    <a href="news/industry-insights/2026-ev-market-trends.html" class="btn">Read More</a>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>YourCompanyName</h3>
+            <p>Official authorized core distributor of Starpower Semiconductor. Your trusted partner in power electronics.</p>
+            <p>Email: sales@yourcompanyname.com | Phone: +1 (800) 123-4567</p>
+            <p>&copy; 2025 YourCompanyName. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

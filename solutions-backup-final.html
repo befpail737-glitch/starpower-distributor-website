@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Electronics Solutions | Starpower Applications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #0033A0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .page-header {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #212529;
+            margin-bottom: 1rem;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .category-card {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .category-card h3 {
+            color: #0033A0;
+            margin-bottom: 1rem;
+        }
+        .category-card p {
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            background: #0033A0;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background: #002080;
+        }
+        footer {
+            background: #212529;
+            color: #ccc;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        footer h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .breadcrumbs {
+            padding: 1rem 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumbs a {
+            color: #0033A0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="solutions.html"><strong>Solutions</strong></a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> / <span>Solutions</span>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Power Electronics Solutions</h1>
+            <p>Discover proven solutions using Starpower semiconductors</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>Application Areas</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>🔋 Energy Storage Systems</h3>
+                    <p>Battery management and grid-tied energy storage solutions using advanced power electronics.</p>
+                    <a href="solutions/energy-storage-ess/" class="btn">Learn More</a>
+                </div>
+                <div class="category-card">
+                    <h3>🚗 EV Main Inverter</h3>
+                    <p>Electric vehicle powertrain solutions for automotive applications with high efficiency SiC modules.</p>
+                    <a href="solutions/ev-main-inverter/" class="btn">View Details</a>
+                </div>
+                <div class="category-card">
+                    <h3>🏭 Industrial Servo Drive</h3>
+                    <p>Precision motor control for industrial automation systems with reliable IGBT technology.</p>
+                    <a href="solutions/industrial-servo-drive/" class="btn">Explore</a>
+                </div>
+                <div class="category-card">
+                    <h3>⚡ Modular UPS</h3>
+                    <p>Uninterruptible power supply systems for critical applications requiring high reliability.</p>
+                    <a href="solutions/modular-ups/" class="btn">Discover</a>
+                </div>
+                <div class="category-card">
+                    <h3>☀️ Solar Inverters</h3>
+                    <p>Photovoltaic inverter solutions for renewable energy applications with maximum efficiency.</p>
+                    <a href="#" class="btn">Coming Soon</a>
+                </div>
+                <div class="category-card">
+                    <h3>💨 Wind Power</h3>
+                    <p>Wind turbine converter systems for sustainable energy generation with robust performance.</p>
+                    <a href="#" class="btn">Coming Soon</a>
+                </div>
+            </div>
+
+            <h2>Why Choose Our Solutions?</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>✅ Proven Designs</h3>
+                    <p>Field-tested reference designs that accelerate your development cycle</p>
+                </div>
+                <div class="category-card">
+                    <h3>🎯 Expert Support</h3>
+                    <p>Dedicated FAE team with deep application knowledge and design expertise</p>
+                </div>
+                <div class="category-card">
+                    <h3>📊 Performance Optimization</h3>
+                    <p>Optimized for efficiency, reliability, and cost-effectiveness in real-world applications</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>YourCompanyName</h3>
+            <p>Official authorized core distributor of Starpower Semiconductor. Your trusted partner in power electronics.</p>
+            <p>Email: sales@yourcompanyname.com | Phone: +1 (800) 123-4567</p>
+            <p>&copy; 2025 YourCompanyName. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

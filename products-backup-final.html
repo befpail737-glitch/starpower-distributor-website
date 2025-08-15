@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starpower Products | IGBT, SiC, IPM Modules</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #0033A0;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .page-header {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #212529;
+            margin-bottom: 1rem;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .category-card {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .category-card h3 {
+            color: #0033A0;
+            margin-bottom: 1rem;
+        }
+        .category-card p {
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            background: #0033A0;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background: #002080;
+        }
+        footer {
+            background: #212529;
+            color: #ccc;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        footer h3 {
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .breadcrumbs {
+            padding: 1rem 0;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumbs a {
+            color: #0033A0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html"><strong>Products</strong></a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> / <span>Products</span>
+        </div>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Starpower Product Center</h1>
+            <p>Comprehensive portfolio of high-performance power semiconductors</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <h2>Product Categories</h2>
+            <p>Choose from our comprehensive range of power semiconductor solutions</p>
+            
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>🔷 IGBT Modules</h3>
+                    <p>High-efficiency IGBT modules for industrial drives, renewable energy, and automotive applications. Available in 1200V and 1700V ratings.</p>
+                    <p><strong>Features:</strong> 20+ Models, 1200V-1700V</p>
+                    <a href="products/igbt-modules/" class="btn">Explore IGBTs</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>⚡ SiC Modules</h3>
+                    <p>Advanced Silicon Carbide modules delivering superior efficiency and thermal performance for next-generation power systems.</p>
+                    <p><strong>Features:</strong> 5+ Models, Automotive Grade</p>
+                    <a href="products/sic-modules/" class="btn">View SiC</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>🎛️ IPM Modules</h3>
+                    <p>Intelligent Power Modules with integrated gate drivers and protection circuits for simplified motor control applications.</p>
+                    <p><strong>Features:</strong> Multiple Ratings, Built-in Protection</p>
+                    <a href="products/ipm-modules/" class="btn">View IPMs</a>
+                </div>
+
+                <div class="category-card">
+                    <h3>🔧 Discrete Devices</h3>
+                    <p>Individual IGBT transistors and diodes providing flexibility for custom power electronic designs and prototyping.</p>
+                    <p><strong>Features:</strong> Various Packages, 650V-1700V</p>
+                    <a href="products/discretes/" class="btn">View Discretes</a>
+                </div>
+            </div>
+
+            <h2>Quick Actions</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>📦 Request Samples</h3>
+                    <p>Get evaluation samples for your testing and prototyping needs</p>
+                    <a href="contact.html" class="btn">Request Now →</a>
+                </div>
+                <div class="category-card">
+                    <h3>📄 Technical Documentation</h3>
+                    <p>Access datasheets, application notes, and design resources</p>
+                    <a href="support.html" class="btn">Browse Docs →</a>
+                </div>
+                <div class="category-card">
+                    <h3>🎯 FAE Support</h3>
+                    <p>Connect with our field application engineers for design assistance</p>
+                    <a href="contact.html" class="btn">Get Support →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>YourCompanyName</h3>
+            <p>Official authorized core distributor of Starpower Semiconductor. Your trusted partner in power electronics.</p>
+            <p>Email: sales@yourcompanyname.com | Phone: +1 (800) 123-4567</p>
+            <p>&copy; 2025 YourCompanyName. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
