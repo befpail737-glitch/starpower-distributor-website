@@ -1,0 +1,17 @@
+# Redirects for clean URLs (remove .html)
+/about              /about.html             200
+/contact            /contact.html           200
+/products           /products.html          200
+/support            /support.html           200
+/news               /news/index.html        200
+/solutions          /solutions/index.html   200
+
+# Example Redirect for a product category
+/products/igbt-modules  /products/igbt-modules/index.html   200
+
+# Example Redirect for a specific product
+/products/igbt-modules/gd100hfl120c1s  /products/igbt-modules/gd100hfl120c1s.html  200
+
+# This is a special rule for Single Page Applications, but it's useful
+# as a catch-all to ensure all paths are handled gracefully.
+/*                  /index.html             200

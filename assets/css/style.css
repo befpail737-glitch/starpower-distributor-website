@@ -1,0 +1,231 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #0033A0; /* A professional blue */
+    --secondary-color: #D90429; /* A strong accent red */
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --text-color: #333;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --container-width: 1200px;
+    --border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+h1 { font-size: 2.8rem; }
+h2 { font-size: 2.2rem; }
+
+/* --- Header & Navigation --- */
+.site-header {
+    background-color: #fff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-left: 25px;
+}
+
+.main-nav ul li a {
+    font-weight: 600;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.mobile-nav-toggle {
+    display: none; /* Hidden on desktop */
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    background: var(--dark-color) url('https://placehold.co/1920x600/212529/f8f9fa?text=Tech+Background') no-repeat center center/cover;
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    color: #fff;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b80020;
+}
+
+/* --- Sections --- */
+.text-center { text-align: center; }
+.page-header, .page-content, .core-advantages {
+    padding: 4rem 0;
+}
+.page-header {
+    background-color: var(--light-color);
+}
+.core-advantages {
+    background-color: var(--light-color);
+}
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.advantage-item {
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: var(--border-radius);
+}
+
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --- Footer --- */
+.site-footer {
+    background-color: var(--dark-color);
+    color: #ccc;
+    padding: 3rem 0 1rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.site-footer h3 {
+    color: #fff;
+}
+.site-footer a {
+    color: #ccc;
+}
+.site-footer ul {
+    list-style: none;
+}
+.site-footer ul li {
+    margin-bottom: 0.5rem;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+
+    .main-nav {
+        display: none; /* Hide nav on mobile by default */
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        background: none;
+        border: 1px solid var(--dark-color);
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: var(--border-radius);
+    }
+    
+    /* We'll add JS to show the nav */
+    .main-nav.active {
+        display: block;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-nav.active ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .main-nav.active ul li {
+        margin: 0;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}

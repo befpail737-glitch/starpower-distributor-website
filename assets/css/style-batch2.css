@@ -1,0 +1,142 @@
+/* --- BATCH 3 STYLES: TABLES, PRODUCT DETAIL, ARTICLES --- */
+
+/* --- Product & Data Tables --- */
+.table-container {
+    overflow-x: auto; /* For responsive tables */
+    margin-top: 2rem;
+}
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.product-table th, .product-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+.product-table th {
+    background-color: var(--light-color);
+    font-weight: bold;
+}
+.product-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.btn-datasheet {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* --- Product Detail Page --- */
+.product-main-layout {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.product-gallery img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+.product-short-desc {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+.product-key-features ul {
+    list-style-position: inside;
+}
+.product-key-features li {
+    margin-bottom: 0.5rem;
+}
+.product-cta-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.product-cta-buttons .cta-button.secondary {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Product Tabs */
+.product-tabs {
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+}
+.tab-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+.tab-link {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+.tab-link.active {
+    color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+}
+.tab-content {
+    display: none;
+    padding: 2rem 0;
+}
+.tab-content.active {
+    display: block;
+}
+.faq-item {
+    margin-bottom: 1.5rem;
+}
+.faq-item h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Article Page --- */
+.article-page .article-header {
+    padding: 4rem 0;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--dark-color);
+}
+.article-header h1 { color: #fff; }
+.article-meta {
+    font-style: italic;
+}
+.article-body {
+    padding: 3rem 0;
+    max-width: 800px;
+}
+.article-body .lead {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.article-body h2, .article-body h3 {
+    margin-top: 2.5rem;
+}
+.article-body ul {
+    list-style-position: inside;
+    margin: 1rem 0;
+}
+
+.distributor-cta-box {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--light-color);
+    border-left: 5px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+@media (max-width: 800px) {
+    .product-main-layout {
+        grid-template-columns: 1fr;
+    }
+}

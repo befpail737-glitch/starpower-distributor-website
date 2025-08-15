@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Note: Troubleshooting Common IGBT Module Failures</title>
+    <meta name="description" content="An expert guide from our FAEs on identifying and preventing common IGBT module failures, including overcurrent, overvoltage, and thermal issues.">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><!-- Copy Header --></header>
+    <main id="main-content">
+        <article class="article-page">
+            <div class="article-header" style="background-image: url('https://placehold.co/1920x400/D90429/FFF?text=Troubleshooting');">
+                <div class="container">
+                    <h1>Application Note: Troubleshooting Common IGBT Module Failures</h1>
+                    <p class="article-meta">A practical guide for power electronics engineers</p>
+                </div>
+            </div>
+
+            <div class="container article-body">
+                <nav class="breadcrumbs">
+                    <a href="/">Home</a> &raquo; <a href="/support.html">Technical Support</a> &raquo; <span>Troubleshooting Guide</span>
+                </nav>
+                
+                <p class="lead">An IGBT module failure can be a costly and time-consuming event. Understanding the root cause is essential to prevent future occurrences. This guide covers the most common failure modes our FAEs encounter and how to diagnose them.</p>
+
+                <h2>Failure Mode 1: Short-Circuit / Overcurrent</h2>
+                <p>This is one of the most destructive failure modes. It occurs when the IGBT is forced to conduct a current far beyond its rated maximum, often due to a load short-circuit or a shoot-through event in a half-bridge.</p>
+                <h3>Symptoms:</h3>
+                <ul>
+                    <li>Catastrophic failure with visible damage to the module casing (cracks, burn marks).</li>
+                    <li>Internal bond wires fused or lifted.</li>
+                    <li>Shorted collector-emitter junction.</li>
+                </ul>
+                <h3>Prevention:</h3>
+                <p>Ensure your gate driver has a fast-acting desaturation (DESAT) protection circuit that can turn off the IGBT within the specified Short-Circuit Withstand Time (typically 5-10µs).</p>
+
+                <h2>Failure Mode 2: Overvoltage</h2>
+                <p>This occurs when the voltage across the collector-emitter (Vce) exceeds the module's breakdown voltage rating (Vces). This is often caused by stray inductance in the DC-link busbar during high di/dt switching events.</p>
+                <h3>Symptoms:</h3>
+                <ul>
+                    <li>Punctured die, often with no external signs of damage.</li>
+                    <li>Increased collector-emitter leakage current.</li>
+                </ul>
+                <h3>Prevention:</h3>
+                <p>Minimize the inductance in your DC bus layout using laminated busbars. Use high-quality, low-ESL DC-link capacitors and consider adding a snubber circuit if voltage overshoot is still an issue.</p>
+                
+                <!-- This article would continue with sections on Thermal Failure, Gate Drive Faults, etc. -->
+
+                <div class="distributor-cta-box">
+                    <h3>Need Failure Analysis Support?</h3>
+                    <p>If you have experienced a module failure, don't guess the cause. As an authorized <strong>Starpower distributor</strong>, we can facilitate professional failure analysis to provide you with definitive answers.</p>
+                    <a href="/contact.html" class="cta-button">Contact Our FAE Team</a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer"><!-- Copy Footer --></footer>
+</body>
+</html>

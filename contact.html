@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Starpower Authorized Distributor | YourCompanyName</title>
+    <meta name="description" content="Contact YourCompanyName for quotes, samples, or technical support for Starpower products. Reach our expert team via our contact form, email, or phone.">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><!-- Copy Header --></header>
+
+    <main id="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>We're here to help. Reach out to our team for quotes, samples, or technical support.</p>
+            </div>
+        </section>
+        
+        <section class="page-content contact-page">
+            <div class="container">
+                 <nav class="breadcrumbs">
+                    <a href="/">Home</a> &raquo; <span>Contact Us</span>
+                </nav>
+
+                <div class="contact-layout">
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <form id="contact-form" action="[YOUR_FORM_ENDPOINT]" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="part_number">Part Number (if applicable)</label>
+                                <input type="text" id="part_number" name="part_number">
+                            </div>
+                            <div class="form-group">
+                                <label for="inquiry_type">Inquiry Type *</label>
+                                <select id="inquiry_type" name="inquiry_type" required>
+                                    <option value="">-- Please select --</option>
+                                    <option value="quote">Request a Quote</option>
+                                    <option value="sample">Request a Sample</option>
+                                    <option value="technical_support">Technical Support</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Submit Inquiry</button>
+                            <p id="form-status"></p>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p>Our team is available during standard business hours to assist you.</p>
+                        
+                        <div class="info-block">
+                            <h3>General Inquiries & Sales</h3>
+                            <p><strong>Email:</strong> sales@yourcompanyname.com</p>
+                            <p><strong>Phone:</strong> +1 (800) 123-4567</p>
+                        </div>
+                        
+                         <div class="info-block">
+                            <h3>Technical Support</h3>
+                            <p><strong>Email:</strong> support@yourcompanyname.com</p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h3>Our Office</h3>
+                            <p>123 Tech Drive<br>Innovation City, ST 54321<br>United States</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><!-- Copy Footer --></footer>
+</body>
+</html>

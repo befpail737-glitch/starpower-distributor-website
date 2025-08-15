@@ -1,0 +1,17 @@
+{
+  "name": "starpower-distributor-website",
+  "version": "1.0.0",
+  "description": "Official distributor website for Starpower products.",
+  "author": "YourCompanyName",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "minify-css": "css-minify -f css/style.css -o css/",
+    "minify-js": "javascript-minifier -i js/main.js -o js/main.min.js",
+    "build": "npm run minify-css && npm run minify-js"
+  },
+  "devDependencies": {
+    "css-minify": "^2.0.0",
+    "javascript-minifier": "^1.0.1"
+  }
+}

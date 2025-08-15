@@ -1,0 +1,134 @@
+/* --- UPDATES & NEW STYLES FOR BATCH 2 --- */
+
+/* Logo Image */
+.logo a img {
+    height: 40px;
+    display: block;
+}
+
+/* Hero Banner Enhancements */
+.hero-banner {
+    background: url('/assets/images/hero-background.svg') no-repeat center center/cover;
+}
+.hero-banner .subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+.hero-banner p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Core Advantages Icon */
+.advantage-item .icon {
+    height: 48px;
+    margin-bottom: 1rem;
+}
+
+/* Card Grid Layout */
+.product-areas, .solutions-showcase, .final-cta {
+    padding: 4rem 0;
+}
+.product-areas {
+    background-color: var(--light-color);
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.card {
+    display: block;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+.card h3 {
+    color: var(--primary-color);
+}
+
+/* Solutions Showcase Layout */
+.showcase-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+.showcase-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+.showcase-item:nth-child(even) {
+    grid-auto-flow: dense;
+}
+.showcase-item:nth-child(even) img {
+    grid-column: 2;
+}
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.showcase-content {
+    padding: 2rem;
+}
+.text-link {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+/* Final CTA Section */
+.final-cta {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.final-cta h2 {
+    color: #fff;
+}
+.final-cta .cta-button {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+.final-cta .cta-button:hover {
+    background-color: #eee;
+}
+
+/* Page Intro Block */
+.page-intro {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin: 2rem 0;
+    border-left: 5px solid var(--primary-color);
+}
+
+/* Responsive adjustments for new sections */
+@media (max-width: 900px) {
+    .showcase-item, .showcase-item:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+    .showcase-item:nth-child(even) img {
+        grid-column: 1;
+    }
+}```
+
+This completes Batch 2. Your website now has a professional look with a well-structured homepage and main section pages. The foundation is perfectly set for the next batch, where we will begin creating the detailed content pages (product details, solution articles, etc.).

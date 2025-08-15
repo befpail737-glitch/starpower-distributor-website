@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices for Paralleling IGBT Modules | Application Note</title>
+    <meta name="description" content="A technical guide on how to successfully parallel IGBT modules for higher current, covering layout, gate drive design, and thermal management.">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="/js/main.min.js" defer></script>
+</head>
+<body>
+    <header class="site-header"><!-- Copy Header --></header>
+    <main id="main-content">
+        <article class="article-page">
+            <div class="article-header" style="background-image: url('https://placehold.co/1920x400/0033A0/FFF?text=Engineering+Topic');">
+                <div class="container">
+                    <h1>Best Practices for Paralleling IGBT Modules</h1>
+                    <p class="article-meta">An Application Note for High-Current Designs</p>
+                </div>
+            </div>
+            <div class="container article-body">
+                <nav class="breadcrumbs">
+                    <a href="/">Home</a> &raquo; <a href="/support.html">Technical Support</a> &raquo; <span>Paralleling Guide</span>
+                </nav>
+                <p class="lead">To achieve higher output currents, engineers often connect IGBT modules in parallel. While effective, this technique requires careful design to ensure proper current sharing between the modules. Uneven sharing can lead to thermal runaway and premature failure. This guide covers the critical best practices.</p>
+                <h2>1. Symmetrical Layout is Key</h2>
+                <p>The most important factor is a physically symmetrical layout for both the power path (DC busbars) and the gate drive signals. Any imbalance in the stray inductance of the power connections will cause unequal current sharing during switching transients.</p>
+                <h2>2. Independent Gate Drive Components</h2>
+                <p>Each paralleled module should have its own individual gate resistor. Do not use a single, larger resistor for all gates. This ensures that each IGBT gate is driven with a well-defined impedance, preventing oscillations between the modules.</p>
+                <h2>3. Device Selection and Thermal Management</h2>
+                <p>Use IGBT modules from the same manufacturing batch to ensure their characteristics (like VCE(sat)) are as closely matched as possible. All paralleled modules should be mounted on a single heatsink with uniform thermal resistance to ensure they operate at the same temperature.</p>
+                <div class="distributor-cta-box">
+                    <h3>Need Help With a High-Current Design?</h3>
+                    <p>Our FAEs have extensive experience with paralleling Starpower modules. Contact us for layout reviews and component recommendations.</p>
+                    <a href="/contact.html" class="cta-button">Ask an FAE</a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="site-footer"><!-- Copy Footer --></footer>
+</body>
+</html>

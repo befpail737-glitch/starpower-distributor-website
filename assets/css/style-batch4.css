@@ -1,0 +1,103 @@
+/* --- BATCH 5 STYLES: NEWS & CONTACT FORM --- */
+
+/* News Page Layout */
+.news-layout {
+    display: grid;
+    gap: 2rem;
+}
+.news-featured {
+    grid-column: 1 / -1; /* Span full width */
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.news-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    display: flex;
+    flex-direction: column;
+}
+.news-card.large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.news-card-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+.news-card.large .news-card-image-link img {
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+.news-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.news-card-content h2 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+.news-card-content h2 a {
+    color: var(--dark-color);
+}
+.news-card-content p {
+    flex-grow: 1;
+}
+.news-card-category {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    .news-card.large {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Page Layout */
+.contact-page .contact-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+.contact-info .info-block {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+#form-status {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+@media (max-width: 900px) {
+    .contact-page .contact-layout {
+        grid-template-columns: 1fr;
+    }
+}
