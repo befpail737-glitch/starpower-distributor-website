@@ -1,20 +1,4 @@
-# Cloudflare Pages redirects and headers
-
-# Direct redirects for clean URLs
+# Simplified redirects for Cloudflare Pages
 /products    /products.html    200
 /solutions   /solutions.html   200  
 /news        /news.html        200
-/about       /about.html       200
-/contact     /contact.html     200
-/support     /support.html     200
-
-# Handle with trailing slashes
-/products/   /products.html    200
-/solutions/  /solutions.html   200  
-/news/       /news.html        200
-/about/      /about.html       200
-/contact/    /contact.html     200
-/support/    /support.html     200
-
-# Handle 404s - this must be last
-/*           /404.html         404

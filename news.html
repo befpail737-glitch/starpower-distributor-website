@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News & Industry Insights | Starpower Updates | YourCompanyName</title>
-    <meta name="description" content="Stay updated with the latest news from YourCompanyName and insights into the power electronics industry, including market trends and technology developments.">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -20,286 +17,37 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="support.html">Technical Support</a></li>
                     <li><a href="news.html" class="active">News</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <button class="mobile-nav-toggle">Menu</button>
         </div>
     </header>
 
     <main id="main-content">
-        <!-- Hero Section -->
-        <section class="news-hero">
+        <section class="page-header">
             <div class="container">
-                <div class="hero-content">
-                    <h1>News & Industry Insights</h1>
-                    <p class="hero-subtitle">Stay informed about the latest developments in power electronics</p>
-                    <p>From company announcements to industry trends, get the insights that matter for your power electronics projects.</p>
-                </div>
-                <div class="hero-newsletter">
-                    <h3>Subscribe to Updates</h3>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email address" class="newsletter-input">
-                        <button type="submit" class="newsletter-btn">Subscribe</button>
-                    </form>
-                    <p class="newsletter-note">Get monthly insights delivered to your inbox</p>
-                </div>
+                <h1>News & Industry Insights</h1>
+                <p>Stay updated with the latest developments in power electronics</p>
             </div>
         </section>
 
-        <!-- Breadcrumbs -->
-        <section class="breadcrumbs-section">
+        <section class="featured-categories">
             <div class="container">
-                <nav class="breadcrumbs">
-                    <a href="index.html">Home</a>
-                    <span class="separator">/</span>
-                    <span class="current">News</span>
-                </nav>
-            </div>
-        </section>
-
-        <!-- News Categories -->
-        <section class="news-categories">
-            <div class="container">
-                <div class="category-tabs">
-                    <button class="tab-btn active" data-category="all">All News</button>
-                    <button class="tab-btn" data-category="company">Company News</button>
-                    <button class="tab-btn" data-category="industry">Industry Insights</button>
-                    <button class="tab-btn" data-category="products">Product Updates</button>
-                    <button class="tab-btn" data-category="events">Events</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Article -->
-        <section class="featured-article">
-            <div class="container">
-                <div class="article-card featured-card">
-                    <div class="article-image">
-                        <img src="assets/images/news/ev-market-trends-2026.jpg" alt="2026 EV Market Trends" loading="lazy">
-                        <div class="article-badge">Featured</div>
+                <h2>Latest News</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <h3>Industry Trends</h3>
+                        <p>Latest developments in power semiconductor technology and markets.</p>
                     </div>
-                    <div class="article-content">
-                        <div class="article-meta">
-                            <span class="category">Industry Insights</span>
-                            <span class="date">January 12, 2025</span>
-                            <span class="read-time">8 min read</span>
-                        </div>
-                        <h2>2026 EV Market Trends: The Rise of 800V Powertrains</h2>
-                        <p class="article-excerpt">The electric vehicle industry is rapidly evolving towards 800V architectures. We analyze the key drivers, technical challenges, and semiconductor requirements shaping this transition, including the critical role of SiC power modules.</p>
-                        <div class="article-tags">
-                            <span class="tag">Electric Vehicles</span>
-                            <span class="tag">SiC Technology</span>
-                            <span class="tag">Market Analysis</span>
-                        </div>
-                        <div class="article-actions">
-                            <a href="news/industry-insights/2026-ev-market-trends.html" class="btn-primary">Read Full Article</a>
-                            <button class="btn-secondary share-btn">Share Article</button>
-                        </div>
+                    <div class="category-card">
+                        <h3>Company Updates</h3>
+                        <p>News and announcements from YourCompanyName and Starpower.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- News Grid -->
-        <section class="news-grid">
-            <div class="container">
-                <div class="grid-header">
-                    <h2>Latest News</h2>
-                    <div class="grid-filters">
-                        <select class="filter-select">
-                            <option value="newest">Newest First</option>
-                            <option value="oldest">Oldest First</option>
-                            <option value="popular">Most Popular</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="articles-grid">
-                    <!-- Company News Articles -->
-                    <article class="article-card" data-category="company">
-                        <div class="article-image">
-                            <img src="assets/images/news/new-headquarters.jpg" alt="New Headquarters Announcement" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category company">Company News</span>
-                                <span class="date">January 8, 2025</span>
-                            </div>
-                            <h3>YourCompanyName Announces New Regional Headquarters</h3>
-                            <p>Expansion strategy includes new 50,000 sq ft facility to better serve growing customer base in the power electronics sector.</p>
-                            <div class="article-footer">
-                                <a href="news/company/announcing-new-headquarters.html" class="read-more">Read More →</a>
-                                <div class="article-stats">
-                                    <span>5 min read</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Industry Insights -->
-                    <article class="article-card" data-category="industry">
-                        <div class="article-image">
-                            <img src="assets/images/news/semiconductor-shortage.jpg" alt="Semiconductor Market Analysis" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category industry">Industry Insights</span>
-                                <span class="date">January 5, 2025</span>
-                            </div>
-                            <h3>Choosing a Reliable Power Semiconductor Distributor</h3>
-                            <p>Key factors to consider when selecting a distributor partner for critical power electronics applications and long-term supply security.</p>
-                            <div class="article-footer">
-                                <a href="news/industry-insights/choosing-a-reliable-distributor.html" class="read-more">Read More →</a>
-                                <div class="article-stats">
-                                    <span>7 min read</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Company News -->
-                    <article class="article-card" data-category="company">
-                        <div class="article-image">
-                            <img src="assets/images/news/university-partnership.jpg" alt="University Partnership" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category company">Company News</span>
-                                <span class="date">December 28, 2024</span>
-                            </div>
-                            <h3>Strategic Partnership with Leading Technical University</h3>
-                            <p>Collaboration aims to advance power electronics research and develop next-generation engineering talent in the semiconductor industry.</p>
-                            <div class="article-footer">
-                                <a href="news/company/partnership-with-university.html" class="read-more">Read More →</a>
-                                <div class="article-stats">
-                                    <span>4 min read</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Industry Insights -->
-                    <article class="article-card" data-category="industry">
-                        <div class="article-image">
-                            <img src="assets/images/news/renewable-energy-trends.jpg" alt="Renewable Energy Trends" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category industry">Industry Insights</span>
-                                <span class="date">December 20, 2024</span>
-                            </div>
-                            <h3>Grid-Scale Energy Storage: Technology Roadmap 2025</h3>
-                            <p>Analysis of emerging technologies and power electronics requirements driving the next phase of utility-scale energy storage deployment.</p>
-                            <div class="article-footer">
-                                <a href="#" class="read-more">Read More →</a>
-                                <div class="article-stats">
-                                    <span>12 min read</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Product Updates -->
-                    <article class="article-card" data-category="products">
-                        <div class="article-image">
-                            <img src="assets/images/news/new-product-launch.jpg" alt="New Product Launch" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category product">Product Updates</span>
-                                <span class="date">December 15, 2024</span>
-                            </div>
-                            <h3>Starpower Launches Next-Gen 1700V IGBT Series</h3>
-                            <p>Enhanced thermal performance and switching characteristics make these modules ideal for high-power industrial and renewable energy applications.</p>
-                            <div class="article-footer">
-                                <a href="#" class="read-more">Read More →</a>
-                                <div class="article-stats">
-                                    <span>6 min read</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Events -->
-                    <article class="article-card" data-category="events">
-                        <div class="article-image">
-                            <img src="assets/images/news/trade-show-2025.jpg" alt="Trade Show 2025" loading="lazy">
-                        </div>
-                        <div class="article-content">
-                            <div class="article-meta">
-                                <span class="category event">Events</span>
-                                <span class="date">December 10, 2024</span>
-                            </div>
-                            <h3>Visit Us at APEC 2025 - Booth #1247</h3>
-                            <p>Join us at the Applied Power Electronics Conference to see live demonstrations of Starpower's latest IGBT and SiC technologies.</p>
-                            <div class="article-footer">
-                                <a href="#" class="read-more">Event Details →</a>
-                                <div class="article-stats">
-                                    <span>March 16-20, 2025</span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Load More -->
-                <div class="load-more-section">
-                    <button class="btn-outline load-more-btn">Load More Articles</button>
-                    <p class="load-info">Showing 6 of 24 articles</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Signup -->
-        <section class="newsletter-signup">
-            <div class="container">
-                <div class="signup-content">
-                    <div class="signup-text">
-                        <h2>Stay Informed</h2>
-                        <p>Get the latest power electronics insights, industry news, and product updates delivered directly to your inbox.</p>
-                        <div class="signup-benefits">
-                            <div class="benefit-item">
-                                <span class="benefit-icon">📧</span>
-                                <span>Monthly industry insights</span>
-                            </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">🚀</span>
-                                <span>Early access to new products</span>
-                            </div>
-                            <div class="benefit-item">
-                                <span class="benefit-icon">📊</span>
-                                <span>Exclusive market analysis</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="signup-form">
-                        <h3>Subscribe to Newsletter</h3>
-                        <form class="newsletter-form-large">
-                            <div class="form-group">
-                                <input type="email" placeholder="Your email address" class="form-input" required>
-                            </div>
-                            <div class="form-group">
-                                <select class="form-select">
-                                    <option value="">Select your interests</option>
-                                    <option value="general">General Industry News</option>
-                                    <option value="products">Product Updates</option>
-                                    <option value="technical">Technical Content</option>
-                                    <option value="events">Events & Webinars</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="checkmark"></span>
-                                    I agree to receive marketing communications
-                                </label>
-                            </div>
-                            <button type="submit" class="btn-primary">Subscribe Now</button>
-                        </form>
+                    <div class="category-card">
+                        <h3>Technical Insights</h3>
+                        <p>Expert analysis and technical articles from our engineering team.</p>
                     </div>
                 </div>
             </div>
@@ -308,31 +56,10 @@
 
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>YourCompanyName</h3>
-                    <p>Official authorized core distributor of Starpower Semiconductor. Your trusted partner in power electronics.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>News Categories</h3>
-                    <ul>
-                        <li><a href="news/company/">Company News</a></li>
-                        <li><a href="news/industry-insights/">Industry Insights</a></li>
-                        <li><a href="#" target="_blank">RSS Feed</a></li>
-                        <li><a href="#">Newsletter Archive</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Media Contact</h3>
-                    <p>Email: press@yourcompanyname.com</p>
-                    <p>Phone: +1 (800) 123-4567</p>
-                </div>
-            </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 YourCompanyName. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
